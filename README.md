@@ -1,2 +1,1 @@
-# go-perfrepoclient
-PerfRepo client in Go
+# PerfRepo Go Client
