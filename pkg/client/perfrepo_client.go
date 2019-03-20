@@ -14,7 +14,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/mgencur/go-perfrepoclient/pkg/apis"
+	"github.com/PerfCake/go-perfrepoclient/pkg/apis"
 )
 
 const (

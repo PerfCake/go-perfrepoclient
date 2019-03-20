@@ -8,12 +8,12 @@ Report Permissions and more.
 
 1) Download the client
 
-    `go get github.com/mgencur/go-perfrepoclient`
+    `go get github.com/PerfCake/go-perfrepoclient`
 
 2) Create an object of type `*client.PerfRepoClient`:
 
     ```go
-    import "github.com/mgencur/go-perfrepoclient/pkg/client"
+    import "github.com/PerfCake/go-perfrepoclient/pkg/client"
 
     testClient := client.NewClient("http://perf.repo.url", "username", "password")
     ```
@@ -23,7 +23,7 @@ Report Permissions and more.
     * Create a Test object:
 
         ```go
-        import "github.com/mgencur/go-perfrepoclient/pkg/apis"
+        import "github.com/PerfCake/go-perfrepoclient/pkg/apis"
 
         //create a Test object
         perfRepoTest := &apis.Test{
@@ -94,8 +94,8 @@ Report Permissions and more.
         testExecID, err := testClient.CreateTestExecution(testExec)
 
         if err != nil {
-		    t.Fatal("Failed to create TestExecution", err.Error())
-	    }
+            t.Fatal("Failed to create TestExecution", err.Error())
+        }
         ```
 
     Note: More examples in the `test/e2e` package.
